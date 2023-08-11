@@ -11,11 +11,8 @@ function handleTimePlayer(event) {
   localStorage.setItem(CURRENT_TIME, event.seconds);
 }
 
-// console.log(localStorage.getItem(CURRENT_TIME));
-// console.log(typeof localStorage.getItem(CURRENT_TIME));
 const currentTime = localStorage.getItem(CURRENT_TIME)
   ? localStorage.getItem(CURRENT_TIME)
   : 0;
 
-// console.log(Number(currentTime));
 player.setCurrentTime(Number(currentTime));
