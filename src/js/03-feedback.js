@@ -31,7 +31,7 @@ function updateFormTextContent() {
     const parsedData = JSON.parse(saveMessage);
      
     if (parsedData) {
-        const { email, massage } = parsedData;
+        const { email, message } = parsedData;
         if (email !== '') {
             inputEl.value = email;
         }
